@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KotlinPlayStore</string>
+    <string name="search_for_apps_and_games">Pesquisar apps e jogos</string>
+</resources>
