@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/games"
+            android:title="@string/games"
+            android:icon="@drawable/ic_baseline_videogame_asset_24"/>
+        <item
+            android:id="@+id/apps"
+            android:title="@string/apps"
+            android:icon="@drawable/ic_baseline_dashboard_24"/>
+        <item
+            android:id="@+id/movies"
+            android:title="@string/movies"
+            android:icon="@drawable/ic_baseline_local_movies_24"/>
+        <item
+            android:id="@+id/books"
+            android:title="@string/books"
+            android:icon="@drawable/ic_baseline_book_24"/>
+    </group>
+</menu>
