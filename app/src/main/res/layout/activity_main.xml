@@ -6,16 +6,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    tools:context=".view.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:elevation="0dp">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -70,18 +73,22 @@
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
-
     </com.google.android.material.appbar.AppBarLayout>
 
-
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         app:menu="@menu/menu_bottom_nav"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
+        app:itemIconTint="@drawable/tab_selector"
+        app:itemTextColor="@drawable/tab_selector"
         app:labelVisibilityMode="labeled"
         android:background="@color/white"
         >
